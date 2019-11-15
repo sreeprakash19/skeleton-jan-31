@@ -1,0 +1,12 @@
+
+<div fxLayout = "column" fxLayoutAlign="center center" fxLayoutGap="10%" style="margin: 10%; padding: 5%;">
+
+	<button mat-raised-button > View</button>
+	<button  mat-raised-button > Eager</button>
+</div>
+
+ <ul>
+    <li *ngFor="let item of items | async">
+      {{ item.name }}
+    </li>
+  </ul>

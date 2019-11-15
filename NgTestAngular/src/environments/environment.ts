@@ -4,18 +4,17 @@
 
 export const environment = {
   production: false,
-  firebase: {
-    apiKey: "AIzaSyANER1paySaFarjpkJqEEse9VLn_g1f2Jg",
-    authDomain: "fir-test-ab48f.firebaseapp.com",
-    databaseURL: "https://fir-test-ab48f.firebaseio.com",
-    projectId: "fir-test-ab48f",
-    storageBucket: "fir-test-ab48f.appspot.com",
-    messagingSenderId: "1069070738999"
-    }
-  };
-
-
-
+  firebase : {
+  apiKey: "AIzaSyDeh6uc2zEzn53nbTYYOS0QzeSBzO6dAb8",
+  authDomain: "ngtestangular.firebaseapp.com",
+  databaseURL: "https://ngtestangular.firebaseio.com",
+  projectId: "ngtestangular",
+  storageBucket: "ngtestangular.appspot.com",
+  messagingSenderId: "692433614529",
+  appId: "1:692433614529:web:b9395d186beb036a79c640",
+  measurementId: "G-NQ7ZXPDVQW"
+}
+};
 
 /*
  * For easier debugging in development mode, you can import the following file
