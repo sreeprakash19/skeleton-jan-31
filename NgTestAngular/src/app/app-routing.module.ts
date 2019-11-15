@@ -3,8 +3,9 @@ import { Routes, RouterModule } from '@angular/router';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full'},
-  { path: 'feature-final', loadChildren: () => import('./feature-final/feature-final.module').then(m => m.FeatureFinalModule) }
+  { path: '', redirectTo: '/dbArrayload', pathMatch: 'full'},
+  { path: 'feature-final', loadChildren: () => import('./feature-final/feature-final.module').then(m => m.FeatureFinalModule) },
+  { path: 'dbArrayload', loadChildren: () => import('./db-arrayload/db-arrayload.module').then(m => m.DbArrayloadModule) }
   ];
 
 @NgModule({
