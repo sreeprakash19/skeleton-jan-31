@@ -26,3 +26,32 @@ img:hover {
   border-top: 90px;
   margin: 90px;
 }
+
+.img2{
+  filter: drop-shadow(0 0 0.75rem red);
+
+  position: absolute;
+  top: 40%;
+  right:40%;
+  transform: translate(-50%, -50%);
+}
+
+.img1{
+  filter: drop-shadow(0 0 0.75rem red);
+
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+
+
+.img3{
+  filter: drop-shadow(0 0 0.75rem red);
+
+  position: absolute;
+  top: 40%;
+  right:18%;
+  transform: translate(-50%, -50%);
+}
+
