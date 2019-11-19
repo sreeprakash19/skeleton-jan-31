@@ -1,0 +1,28 @@
+img:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+   
+  }
+
+
+
+
+  .bg{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100%;
+    width:100%;
+  }
+
+  .rowheight
+  {
+    filter: drop-shadow(0 0 0.75rem red);
+   /* filter:contrast(200%); */
+  }
+  h1
+{
+  background-color: yellow;
+  border-top: 90px;
+  margin: 90px;
+}
