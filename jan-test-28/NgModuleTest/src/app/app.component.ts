@@ -22,12 +22,18 @@ export interface PokemonGroup {
 
  export class AppComponent {
   title = 'test';
-  pokemonControl = new FormControl('family-page');
+  pokemonControl = new FormControl('page');
   pokemonGroups: PokemonGroup[] = [
     {
       name: 'Featurestart',
       pokemon: [
         {value: 'feature-start', viewValue: 'Featurestart'}
+      ]
+    },
+       {
+      name: 'Familymember',
+      pokemon: [
+        {value: 'family-member', viewValue: 'FamilyMembers'}
       ]
     }
   ];
@@ -39,6 +45,12 @@ export interface PokemonGroup {
         {value: 'feature-start', viewValue: 'Featurestart'}
       ]
     },
+      {
+      name: 'Familymember',
+      pokemon: [
+        {value: 'family-member', viewValue: 'FamilyMembers'}
+      ]
+    }
 
   ];
   constructor(private router: Router, public svc: UserService){
@@ -55,7 +67,7 @@ export interface PokemonGroup {
   }
   clickedNone(){
 
-    this.router.navigate(['\hom']);
+    this.router.navigate(['\home']);
     
   }
   clickedNonetc(){
