@@ -24,33 +24,41 @@ export interface PokemonGroup {
   title = 'test';
   pokemonControl = new FormControl('page');
   pokemonGroups: PokemonGroup[] = [
-    {
+   {
       name: 'Featurestart',
       pokemon: [
         {value: 'feature-start', viewValue: 'Featurestart'}
       ]
     },
-       {
-      name: 'Familymember',
+   
+    {
+      name: 'LoginPage',
       pokemon: [
-        {value: 'family-member', viewValue: 'FamilyMembers'}
+        {value: 'login-page', viewValue: 'MyMember-Login'}
       ]
     }
+
   ];
   pokemonControltc = new FormControl({value: '', disabled: true});
   pokemonGroupstc: PokemonGroup[] = [
+    
     {
       name: 'Featurestart',
       pokemon: [
-        {value: 'feature-start', viewValue: 'Featurestart'}
+        {value: 'feature-start', viewValue: 'Featurestart'},
+       // {value: 'family-member', viewValue: 'FamilyMembers'}
       ]
     },
-      {
-      name: 'Familymember',
+  {
+      name: 'LoginPage',
       pokemon: [
-        {value: 'family-member', viewValue: 'FamilyMembers'}
+        {value: 'login-page', viewValue: 'loginpage'},
+        {value: 'stepper-page', viewValue: 'stepperpage'},
+        
       ]
-    }
+    },
+
+
 
   ];
   constructor(private router: Router, public svc: UserService){
@@ -66,10 +74,8 @@ export interface PokemonGroup {
    
   }
   clickedNone(){
-
-    this.router.navigate(['\home']);
-    
-  }
+    this.router.navigate(['\hom']);
+    }
   clickedNonetc(){
     this.router.navigateByUrl(this.pokemonControl.value);
   }

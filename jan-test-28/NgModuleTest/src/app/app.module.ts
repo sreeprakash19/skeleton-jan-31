@@ -11,6 +11,7 @@ import {AppMaterialModule} from './app-material/app-material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { environment } from '../environments/environment';
 
+import { CustomerDashboardModule } from './customer-dashboard/customer-dashboard.module';
 
 
 import { AngularFireModule } from '@angular/fire';
@@ -24,7 +25,8 @@ import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+  
   ],
   imports: [
     BrowserModule,
@@ -32,6 +34,7 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     ReactiveFormsModule,
     AppMaterialModule,
+    CustomerDashboardModule,
 
     FlexLayoutModule,
     AngularFireModule.initializeApp(environment.firebase),

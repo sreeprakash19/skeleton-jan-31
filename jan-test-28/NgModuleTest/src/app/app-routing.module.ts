@@ -3,10 +3,12 @@ import { Routes, RouterModule } from '@angular/router';
 
 
 const routes: Routes = [
-{ path: '', redirectTo: '/home', pathMatch: 'full'},
+{ path: '', redirectTo: '/hom', pathMatch: 'full'},
 { path: 'family-member', loadChildren: () => import('./family-member/family-member.module').then(m => m.FamilyMemberModule) },
 { path: 'feature-start', loadChildren: () => import('./feature-start/feature-start.module').then(m => m.FeatureStartModule) },
-{ path: '**', redirectTo: '' , pathMatch: 'full'},
+{ path: 'login-page',loadChildren: () => import('./login-page/login-page.module').then(m => m.LoginPageModule) },
+{ path: '', redirectTo: '' , pathMatch: 'full'},
+{ path: 'stepper-page', loadChildren: () => import('./stepperpage/stepperpage.module').then(m => m.StepperpageModule) }
 ]
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
